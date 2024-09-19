@@ -18,8 +18,8 @@ test_loader = DataLoader(
 )
 
 img, target = test_data[0]
-print(img.shape)
-print(target)   # belongs to which class, e.g. ship, plane, cat....
+print(img.shape)    # OUTPUT: torch.Size([3, 32, 32])
+print(target)   # belongs to which class, e.g. ship, plane, cat.... OUTPUT: 3
 
 writer = SummaryWriter("dataloader")
 
