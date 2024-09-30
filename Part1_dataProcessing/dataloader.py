@@ -11,7 +11,7 @@ test_data = torchvision.datasets.CIFAR10(
 
 test_loader = DataLoader(
     dataset = test_data,
-    batch_size = 64,     # load 12amples per batch
+    batch_size = 64,     # load 64 samples per batch
     shuffle = True,     # shuffle at every batch
     num_workers = 0,    # no multi-threads
     drop_last = False   # do not drop last batch even if #samples in last batch < batch_size
